@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu|Pacifico|Titillium+Web|Montserrat');
+
+* {
+    transition: 0.3s;
+}
+br {
+    height: 6px;
+}
+p {
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-family: 'titillium web', sans-serif;
+    color: #202020;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    line-height: 56px;
+}
+.parallax h1 {
+    color: #f7f9fb;
+    line-height: 40vh;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    line-height: 48px;
+}
+
+.content {
+    width: 1166px;
+    overflow: hidden;
+    margin: auto;
+    padding: 12px 0;
+}
+
+.content p {
+    font-size: 18px;
+    color: #202020;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.content .img_container {
+    padding: 0 20px 0 20px;
+}
+
+.content .img_container img {
+    max-height: 400px;
+    max-width: 512px;
+}
+
+.content .left {
+    float: left;
+    padding-left: 0;
+}
+
+.content .right {
+    float: right;
+    padding-right: 0;
+}
+
+html,
+body,
+.main {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    padding: 0;
+}
+
+.page_cover {
+    position: fixed;
+    height: 0;
+    width: 0;
+    z-index: 49;
+    transition: height 0s, width 0s, background-color 0.5s;
+}
+
+.nav_bar {
+    /*set to same as scrollposition.js inital color*/
+    background-color: #00000000;
+    display: block;
+    width: 100%;
+    height: 64px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    transition: 0s;
+}
+
+.nav_logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 12px;
+    color: #202020;
+    display: inline-block;
+    font-size: 48px;
+    line-height: 64px;
+    font-family: 'pacifico', cursive;
+}
+
+.nav_bar_links {
+    float: right;
+    padding: 0 64px 0 0;
+}
+
+.nav_bar a {
+    margin: 0;
+    padding: 0;
+    font-family: 'titillium web', sans-serif;
+    color: #202020;
+    text-align: center;
+    width: 146px;
+    height: 64px;
+    line-height: 64px;
+    text-decoration: none;
+    font-size: 24px;
+    display: inline-block;
+}
+
+.nav_bar a:hover {
+    background-color: #20202070;
+}
+
+.nav_btn {
+    display: none;
+}
+
+.parallax {
+    /*parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax.full {
+    height: 100vh;
+}
+
+.parallax.small {
+    height: 40vh;
+    background-color: #00000050;
+    background-blend-mode: multiply;
+
+}
+
+.parallax.home1 {
+    background-image: url("images edited/compressed BomanSan Fall 2010  With YS  Leica SL 014.jpg");
+}
+.parallax.home2 {
+    background-image: url("Mountians of Central Korea 3.22.2019/11 KuBongSan Traverse of ridge WU/Photos/L1190306.JPG");
+}
+
+
+
+
+
+
+
+/*moblie site - if change mobile page width also change in scrollFunction in scrollpositoion.js*/
+@media screen and (max-width: 1024px) {
+    #main {
+        transition: margin-left .5s, background-color .5s;
+        padding: 0;
+    }
+
+    .parallax {
+        display: none;
+    }
+
+    .moblie_nav {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 68px;
+        background-color: #f7f9fb;
+    }
+
+    .nav_logo {
+        position: relative;
+        font-size: 30px;
+        line-height: 68px;
+    }
+
+    .nav_bar {
+        height: 100%;
+        width: 0;
+        /* closed width - change opened with in sideNav.js*/
+        position: fixed;
+        /* Stay in place */
+        z-index: 3;
+        /* Stay on top */
+        top: 0;
+        /* Stay at the top */
+        right: 0;
+        left: auto;
+        background-color: #111;
+        /*if change color of moblie nav bar also change color within else statment in sideNav.js*/
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 60px;
+        /* placement of links*/
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in the sidenav */
+        box-shadow: none;
+        z-index: 50;
+    }
+
+    /* The navigation menu links */
+    .nav_bar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .nav_bar a:hover {
+        color: #f1f1f1;
+    }
+
+    /*styling of button to open navbar on mobile*/
+    .nav_btn {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: block;
+        width: 48px;
+        height: 48px;
+        z-index: 1;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+
+    .close_btn {
+        z-index: -1;
+    }
+
+    /* <i> is the one of the 3 lines in the button shape*/
+    .nav_btn i {
+        box-sizing: border-box;
+        display: block;
+        width: 20px;
+        height: 2.1px;
+        background-color: #000;
+        border-radius: 1px;
+        margin-left: 14px;
+    }
+
+    .nav_btn i:nth-child(1) {
+        margin-top: 16px;
+    }
+
+    .nav_btn i:nth-child(2) {
+        margin-top: 4px;
+        opacity: 1;
+    }
+
+    .nav_btn i:nth-child(3) {
+        margin-top: 4px;
+    }
+
+    .nav_btn i {
+        transition: transform 0.5s ease;
+        animation-timing-function: ease-out;
+    }
+
+    .opened i:nth-child(1) {
+        transform: translate(7.2px, 1.6px) rotate(45deg);
+        width: 14.2px;
+    }
+
+    .opened i:nth-child(2) {
+        opacity: 1;
+    }
+
+    .opened i:nth-child(3) {
+        transform: translate(7.2px, -1.6px) rotate(-45deg);
+        width: 14.2px;
+    }
+}
