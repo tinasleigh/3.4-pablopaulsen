@@ -3,9 +3,11 @@
 * {
     transition: 0.3s;
 }
+
 br {
     height: 6px;
 }
+
 p {
     margin: 0;
 }
@@ -21,6 +23,7 @@ h1 {
     text-align: center;
     line-height: 56px;
 }
+
 .parallax h1 {
     color: #f7f9fb;
     line-height: 40vh;
@@ -156,8 +159,9 @@ body,
 }
 
 .parallax.home1 {
-    background-image: url("images/parallax_bomon.jpg"); 
+    background-image: url("images/parallax_bomon.jpg");
 }
+
 .parallax.home2 {
     background-image: url("images/parallax_KuGongSan.jpg");
 }
