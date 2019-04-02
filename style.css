@@ -313,7 +313,33 @@ body.dark,
     .parallax {
         display: none;
     }
+    .content {
+        width: 100%;
+        margin: auto;
+    }
+    .content p {
+        width: 95%;
+        margin: auto;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left;
 
+    }
+    .content .img_container {
+        width: 100%;
+        padding: 0 0 10px 0;
+    }
+    .content .img_container img {
+        width: 100%;
+        max-width: 60vh;
+        max-height: 2000px;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .content .img_container.double img {
+        width: 49%;
+    }
     .moblie_nav {
         position: relative;
         top: 0;
