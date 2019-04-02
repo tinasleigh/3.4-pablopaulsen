@@ -21,11 +21,11 @@
  }
 
  function enableDarkmode() {
-     document.getElementById("main").style.backgroundColor = "#000000";
+     document.body.classList.add("dark");
  }
 
  function disableDarkmode() {
-     document.getElementById("main").style.backgroundColor = "#f7f9fb";
+    document.body.classList.remove("dark");
  }
 
  function getCookie(cname) {
