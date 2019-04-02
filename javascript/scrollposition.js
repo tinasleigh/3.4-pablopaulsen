@@ -3,13 +3,13 @@ window.onscroll = function () {
     scrollFunction()
 };
 // color of nav bar o for orignal and f for final rgba values
-var or = 0,
-    og = 0,
-    ob = 0,
+var or = 80,
+    og = 133,
+    ob = 165,
     oa = 0,
-    fr = 247,
-    fg = 249,
-    fb = 251,
+    fr = 80,
+    fg = 133,
+    fb = 165,
     fa = 1;
 
 function scrollFunction() {
