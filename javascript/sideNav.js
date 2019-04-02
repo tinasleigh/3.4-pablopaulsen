@@ -45,7 +45,7 @@ function removeCover() {
   document.getElementById("pageCover").style.height = "0";
   document.getElementById("pageCover").style.width = "0";
 }
-/*in order to change style if browser changes size*/
+/*in order to close nav so that no code is broken when changing between moblie and desktop sites if browser changes size*/
 function widthCheck() {
   var winWidth = window.innerWidth;
   if (winWidth > 1024) {
