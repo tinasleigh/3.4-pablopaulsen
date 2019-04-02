@@ -24,7 +24,7 @@ h1 {
     line-height: 56px;
 }
 
-.parallax h1 {
+.main .parallax h1 {
     color: #f7f9fb;
     line-height: 40vh;
     text-align: center;
@@ -286,6 +286,9 @@ body.dark,
 }
 .dark i.knob {
     transform: translate(18px, -3px);
+}
+.dark h1, .dark h2 {
+    color: #5085a5;
 }
 
 
